@@ -1,39 +1,63 @@
-# Proyecto: Análisis de Ventas - Alura Store
+Proyecto: Analisis de Ventas - Alura Store
 
-Este proyecto tiene como objetivo analizar los datos de **cuatro tiendas** para ayudar al **Sr. Juan** a decidir cuál de ellas debería vender.  
-Durante el análisis se evaluaron ingresos, categorías de productos, calificaciones de clientes, productos más y menos vendidos y costos de envío.
+Proposito del analisis
+El objetivo de este proyecto fue analizar los datos de las cuatro tiendas de la Alura Store para determinar cual seria la mejor opcion para que el Sr. Juan venda.
+Se revisaron aspectos como:
+- Ingresos totales.
+- Categorias de productos.
+- Calificaciones promedio de los clientes.
+- Productos mas y menos vendidos.
+- Costos de envio promedio.
+Con base en estos indicadores, se elaboro una recomendacion final sobre cual tienda destaca mas y por que.
 
-## Propósito del análisis
+------------------------------------------------------------
 
-El propósito principal del proyecto fue **identificar cuál tienda tiene mejor rendimiento general**, basándose en distintos indicadores clave:
+Estructura del proyecto
+El proyecto esta organizado de la siguiente manera:
 
-- Ingreso total por tienda.  
-- Distribución de categorías de productos.  
-- Calificación promedio de los clientes.  
-- Productos más y menos vendidos.  
-- Costo de envío promedio.  
+alura_store/
+analisis_tiendas.ipynb      Notebook principal con el analisis y graficos
+data/                       Carpeta con los archivos de datos (CSV)
+tienda_1.csv
+tienda_2.csv
+tienda_3.csv
+tienda_4.csv
+README.md                   Documento explicativo del proyecto
 
-A partir de estos resultados, se elabora una **recomendación final** sobre cuál tienda le conviene más vender al Sr. Juan.
+------------------------------------------------------------
 
-En este trabajo analicé los datos de las cuatro tiendas para ver cuál sería mejor para que el Sr. Juan venda. 
-Revisé los ingresos, las categorías de productos, las calificaciones de los clientes, los productos más y menos vendidos y el costo de envío.
+Ejemplos de graficos e insights
 
-Resultados
+1. Ingreso total por tienda
+   Grafico de barras para comparar ingresos entre tiendas.
+   La Tienda 3 presenta los ingresos mas altos.
 
-Ingresos: La Tienda 3 tuvo los ingresos más altos, lo que muestra que vende más.
+2. Distribucion de categorias
+   Grafico de columnas por tienda.
+   Permite ver que tipo de productos se venden mas en cada una.
 
-Categorías: En la Tienda 2 destacan algunos tipos de productos más que otros, mientras que en la Tienda 4 hay una distribución más pareja.
+3. Precio vs Costo de Envio
+   Grafico de lineas que muestra como cambia el costo de envio en relacion al precio.
+   En general, las tiendas con precios mayores tienden a tener envios mas caros.
 
-Calificaciones: La Tienda 1 tiene las mejores valoraciones de los clientes, así que parece tener buena atención o productos de calidad.
+Conclusion general
+La Tienda 3 es la mas rentable en ingresos, aunque la Tienda 1 tiene mejor valoracion de clientes y la Tienda 2 mantiene los costos de envio mas bajos.
 
-Productos más y menos vendidos: La Tienda 3 tiene algunos productos que se venden mucho, pero también otros que casi no se mueven.
+------------------------------------------------------------
 
-Costo de envío: La Tienda 2 tiene los costos de envío más bajos, lo cual es bueno para atraer más clientes.
+Instrucciones para ejecutar el notebook
 
-Los gráficos de barras y líneas ayudaron a ver mejor estas diferencias entre las tiendas.
+1. Clona este repositorio:
+   git clone https://github.com/tuusuario/alura-store.git
+   cd alura-store
 
-Conclusión
+2. Abre el archivo analisis_tiendas.ipynb en Google Colab o Jupyter Notebook.
 
-Después de ver todos los datos, creo que el Sr. Juan debería vender la Tienda 3, porque tiene los ingresos más altos y un buen movimiento de ventas. 
-Sin embargo, sería bueno revisar qué productos no se venden tanto para mejorar. 
-También se puede aprender de la Tienda 1, que tiene buenas calificaciones, y de la Tienda 2, que tiene envíos más baratos.
+3. Si trabajas de forma local, instala las librerias necesarias:
+   pip install pandas matplotlib
+
+4. Ejecuta las celdas del notebook en orden para generar los calculos y graficos.
+
+------------------------------------------------------------
+
+Proyecto desarrollado como parte del Challenge Alura ONE - Data Science.
